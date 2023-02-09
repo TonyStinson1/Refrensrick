@@ -2,8 +2,6 @@
 
 This project is a Rick and Morty Wiki. Made using [React Native](https://reactnative.dev/) to serve an infinite scrolling styled list of all the characters in the famous series [Rick and Morty](https://en.wikipedia.org/wiki/Rick_and_Morty). Uses the [Rick and Morty API](https://rickandmortyapi.com/documentation/#rest) to display the details of each character including- name, gender, origin, location, amount of residents, chapters the character is featured in, etc.
 
-![github stars](https://img.shields.io/github/stars/dustspeck/rick-n-morty-wiki-app) ![github stars](https://img.shields.io/badge/app-react%20native-blue)
-
 ## Screenshots
 
 <details>
@@ -30,23 +28,6 @@ For more details and troubleshooting: [Setting up the development environment](h
 - [react-navigation](https://reactnavigation.org/) navigation library.
 - [jest](https://facebook.github.io/jest/) and [react-native-testing-library](https://callstack.github.io/react-native-testing-library/) for testing.
 
-## Folder structure
-
-This template follows a very simple project structure:
-
-- `src`: This folder is the main container of all the code inside the application.
-  - `api`: Folder to store all methods to fetch data from api.
-  - `components`: Folder to store all the components that you see in the application
-    - `common`: Folder to store any common component that you use throughout the app (such as a generic button)
-    - `Screen`: Folder to store components specific to that `Screen`.
-  - `constants`: Folder to store any kind of constant.
-  - `navigations`: Folder to store the navigators.
-  - `screens`: Folder that contains all the application screens.
-    - `Screen`: Each screen is stored inside its folder as an `index` file.
-  - `utils`: Folder that contains utility services.
-  - `types.ts`: Stores all the types used in the project.
-- `App.js`: Main component that starts the whole app.
-- `index.js`: Entry point of the application as per React-Native standards.
 
 ## Setup environments
 

@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from 'react';
-import {ActivityIndicator} from 'react-native';
-import {BLACK} from '../../constants/colors';
-import {getCharacters} from '../../api';
-import {ICharacter, IPageInfo} from '../../types';
+import React, { useState, useEffect } from 'react';
+import { ActivityIndicator, SafeAreaView } from 'react-native';
+import { BLACK } from '../../constants/colors';
+import { getCharacters } from '../../api';
+import { ICharacter, IPageInfo } from '../../types';
 import SceneBuilder from '../../components/common/SceneBuilder';
 import CardsTray from '../../components/Home/CardsTray';
 
 const Home = () => {
-  const initPageInfo: IPageInfo = {count: 0, pages: 0, next: null, prev: null};
+  const initPageInfo: IPageInfo = { count: 0, pages: 0, next: null, prev: null };
 
   const [characters, setCharacters] = useState<ICharacter[]>([]);
   const [latestPageInfo, setLatestPageInfo] = useState<IPageInfo>(initPageInfo);
@@ -31,17 +31,19 @@ const Home = () => {
   }, []);
 
   return (
-    <SceneBuilder>
-      {isLoading && <ActivityIndicator testID="Home.Loader" color={BLACK} />}
-      {!isLoading && (
-        <CardsTray
-          characters={characters}
-          setCharacters={setCharacters}
-          latestPageInfo={latestPageInfo}
-          setLatestPageInfo={setLatestPageInfo}
-        />
-      )}
-    </SceneBuilder>
+    <SafeAreaView style={{ flex: 1 }}>
+      <SceneBuilder>
+        {isLoading && <ActivityIndicator testID="Home.Loader" color={BLACK} />}
+        {!isLoading && (
+          <CardsTray
+            characters={characters}
+            setCharacters={setCharacters}
+            latestPageInfo={latestPageInfo}
+            setLatestPageInfo={setLatestPageInfo}
+          />
+        )}
+      </SceneBuilder>
+    </SafeAreaView>
   );
 };
 
