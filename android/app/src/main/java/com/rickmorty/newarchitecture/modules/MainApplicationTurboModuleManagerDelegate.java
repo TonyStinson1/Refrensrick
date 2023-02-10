@@ -1,4 +1,4 @@
-package com.rickmorty.newarchitecture.modules;
+package com.refrensrick.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

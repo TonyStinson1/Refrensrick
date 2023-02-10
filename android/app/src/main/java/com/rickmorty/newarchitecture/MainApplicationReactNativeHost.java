@@ -1,4 +1,4 @@
-package com.rickmorty.newarchitecture;
+package com.refrensrick.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.rickmorty.BuildConfig;
-import com.rickmorty.newarchitecture.components.MainComponentsRegistry;
-import com.rickmorty.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.refrensrick.BuildConfig;
+import com.refrensrick.newarchitecture.components.MainComponentsRegistry;
+import com.refrensrick.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
