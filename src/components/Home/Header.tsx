@@ -10,7 +10,7 @@ const Header = () => {
         <Text style={[styles.heading, {textDecorationLine: 'underline'}]}>
           {`Rick and Morty`}
         </Text>
-        {` Wiki.`}
+        {` Sitcom.`}
       </Text>
     </View>
   );

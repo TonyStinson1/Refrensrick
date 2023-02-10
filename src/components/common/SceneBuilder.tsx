@@ -18,7 +18,7 @@ const SceneBuilder = ({style, showTopBar, children}: ISceneBuilderProps) => {
       <View
         style={[
           styles.default,
-          style, // for parent specific styling, can override defaults
+          style,
           showTopBar && {paddingTop: 0},
         ]}>
         {children}
